@@ -1,0 +1,35 @@
+div {
+width:350px;
+border: 2px solid;
+padding: 20px;
+margin: 0 auto;
+position:relative;
+margin-top:30px;
+padding-bottom:40px;
+}
+textarea {
+display: block;
+width:200px;
+height:50px;
+margin-top:10px;
+}
+
+.left {
+position: absolute;
+left:150px;
+}
+
+label {
+margin-bottom: 5px;
+display: block;
+}
+.right {
+color: white;
+background-color: blue;
+position:absolute;
+left: 250px;
+
+}
+.form {
+text-align:right;
+}

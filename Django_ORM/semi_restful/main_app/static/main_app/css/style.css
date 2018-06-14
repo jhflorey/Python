@@ -1,0 +1,37 @@
+td, th {
+border: 1px solid;
+padding: 5px;
+
+}
+
+table{
+margin-bottom: 20px;
+border-spacing: 0;
+text-align: left;
+}
+
+tr:nth-child(even) {
+background-color: #ebf4f5;
+}
+tr:nth-child(odd) {
+background-color: #f5f2f3;
+}
+th{
+background-color: grey;
+}
+
+input {
+margin-top: 5px;
+margin-bottom: 5px;
+border: 2px solid black;
+padding: 5px;
+}
+
+.submit {
+   background-color: blue;
+   position:relative;
+   margin-bottom: 15px;
+   color: white;
+   box-shadow: 5px 5px 5px;
+   font-size :13px;
+}

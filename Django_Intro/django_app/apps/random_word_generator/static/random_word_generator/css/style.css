@@ -1,0 +1,23 @@
+p{
+text-align: center;
+margin-top : 20px;
+margin-bottom: 10px;
+}
+div{
+width : 200px;
+padding : 10px;
+border : 2px solid;
+text-align: center;
+margin : 0 auto;
+margin-bottom : 10px;
+}
+button{
+padding : 5px;
+text-align: center;
+box-shadow: 5px 5px;
+margin : 0 auto;
+}
+.button {
+text-align : center;
+border : none;
+}

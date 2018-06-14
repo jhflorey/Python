@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkout</title>
+</head>
+<body>
+    <h1>Thank for your business</h1>
+    <p>We charged your credit card for {{request.session.price}}</p>
+    <br>
+    <p>You have ordered {{request.session.quantity}} {{request.session.name}} items with us so far and spent {{reauest.session.cost}} with Amadon.com!</p>
+    <br>
+    <br>
+    <h3>Your Order History:</h3>
+    <p>Product: {{request.session.name}}</p>
+    <p>Quantity: {{request.session.total_quantity}}</p>
+    <p>Your total spending with us is {{request.session.total_cost}}</p>
+    <br>
+    <a href="/amadon"><button>Go Back</button></a>
+</body>
+</html>

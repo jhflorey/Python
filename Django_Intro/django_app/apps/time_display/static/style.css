@@ -1,0 +1,19 @@
+p{
+width : 200px;
+height : 20px;
+border : 2px solid;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+margin-bottom : 30px;
+margin-top : 20px;
+}
+
+div{
+width : 400px;
+height: 120px;
+border: 2px solid;
+margin: 0 auto;
+padding: 10px;
+text-align: center;
+}

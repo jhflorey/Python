@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <h3>{{session['times']}}</h3>
+
+    <form action="/increase_2" method="get">
+        <input type="submit" value="Increase">
+    </form>
+    <form action="/rest_1" method="get">
+        <input type="submit" value="Reset">
+    </form>
+</body>
+</html>

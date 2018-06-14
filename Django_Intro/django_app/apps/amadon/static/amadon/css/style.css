@@ -1,0 +1,16 @@
+th, td{
+border: 2px solid;
+}
+
+table{
+border-spacing: 0;
+}
+td{
+padding : 10px;
+}
+th{
+background-color: #ccc8c8;
+}
+tr:nth-child(even){
+background: #ece6e6 ;
+}

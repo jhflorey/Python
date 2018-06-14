@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sesssion Worlds</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'session_words/css/style.css' %}">
+</head>
+<body>
+    <div>
+        <section>
+            <h1>Add a new word</h1>
+            <form action="/session_words/create" method="POST">
+                {% csrf_token %}
+                <input type="text" name="content"><br>
+                <label>
+                    Choose color <br>
+                                 <input type="radio" name="color" value="red">Red<br> 
+                                 <input type="radio" name="color" value="green">Green<br> 
+                                 <input type="radio" name="color" value="blue">Blue<br>
+                </label>
+                <label> 
+                    <input type="checkbox" name="show_big" value="huydeptrai"> show in BIG fonts! <br> 
+                </label>
+                <input class="submit" type="submit" value="Add to session">
+            </form>
+        </section>
+        <article>
+            <a href="/session_words/delete"><button>Clear Session</button></a>
+            {% for word in request.session.data %}
+                <div class="content_word">
+                    <div class="left {{ word.big }}"  style="color:{{ word.color }}">
+                    {{word.content}}
+                    </div>
+                    <div class="right">- added on {{ word.created_at }}
+                    </div>
+                </div>
+                <br>
+            {% endfor %}
+        </article>
+    </div>
+</body>
+</html>

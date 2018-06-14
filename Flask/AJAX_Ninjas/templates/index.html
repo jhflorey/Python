@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="render_infor"></div>
+    <div>
+        <button class="my_button" value="red" >red</button>
+        <button class="my_button" value="blue">blue</button>
+        <button class="my_button" value="orange">orange</button>
+        <button class="my_button" value="purple">purle</button>
+    </div>
+    <br>
+    <p>Or choose a custom color: </p>
+    <input type="text" class="custom_input">
+    <button class="custom_button" value="enter">Enter</button>
+    <br>
+</body>
+<script src="{{ url_for('static', filename='js/index.js') }}">
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Money</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'ninja_gold/css/style.css' %}">
+</head>
+<body>
+    <p>Your Gold: <input type="text" value="{{request.session.total}}"></p>
+    <div class="main_contain">
+        <div class="building">
+            <h3>Farm</h3>
+            <p>(earn 10-20 golds)</p>
+            <a href="/ninja_gold/process/farm"><button>Find Gold</button></a>
+        </div>
+        <div class="building">
+            <h3>Cave</h3>
+            <p>(earn 5-10 golds)</p>
+            <a href="/ninja_gold/process/cave"><button>Find Gold</button></a>
+        </div>
+        <div class="building">
+            <h3>House</h3>
+            <p>(earn 2-5 golds)</p>
+            <a href="/ninja_gold/process/house"><button>Find Gold</button></a>
+        </div>
+        <div class="building">
+            <h3>Casino</h3>
+            <p>(earn 0-50 golds)</p>
+            <a href="/ninja_gold/process/casino"><button>Find Gold</button></a>
+        </div>
+        <br>
+        <h2>Activities</h2>
+        <div class="messages">
+            {% for log in request.session.logs %}
+            <p class='{{log.class}}'>{{log.message}}</p>
+            {% endfor %}
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninjas</title>
+</head>
+<body>
+    <h1>This is the ninja's family!</h1>
+    {% if all %}
+    <img src="{{url_for('static',filename='image/tmnt.png')}}" alt="there is no ninja">
+    {% else %}
+    <img src={{image_src}} alt="there is no ninja">
+    {% endif %}
+</body>
+</html>

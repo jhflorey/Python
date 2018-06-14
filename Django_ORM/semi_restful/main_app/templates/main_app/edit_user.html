@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'main_app/css/style.css' %}">
+</head>
+<body>
+    <h1>Edit User {{user.id}}</h1>
+    <form action="/{{user.id}}/update" method="POST">
+        {% csrf_token %} <!--handle ve csrf security -->
+        First Name: <br>
+        <input type="text" name="first_name" value="{{user.first_name}}">
+        <br>
+        Last Name: <br>
+        <input type="text" name="last_name" value="{{user.last_name}}">
+        <br>
+        Email: <br>
+        <input type="email" name="email" value="{{user.email}}">
+        <br>
+        <input class="submit" type="submit" value="Update">
+    </form>
+    <a href="/{{user.id}}/show">Show</a> | <a href="/">Go Back</a>
+</body>
+</html>

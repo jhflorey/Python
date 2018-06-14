@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='my_style_sheet.css') }}">
+
+</head>
+<body>
+    <div id="my_div_color">
+        <h1>Enter your color value below</h1>
+        <div class="my_color">
+            <form action="/result" method='POST'>
+                <label>
+                    Red <input class="red" type="text" name="red">
+                    <br>
+                    Green <input class="green" type="text" name="green">
+                    <br>
+                    Blue <input class="blue" type="text" name="blue">
+                    <br>
+                </label>
+                <br>
+                {% if fail %}
+                <p>All values must be between 1 and 255</p>
+                {% endif %}
+                <input class="button" type="submit" value="Show my color!">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('my_div_color').style.backgroundColor = "rgb({{red}},{{blue}},{{green}})";
+</script>
+</html>

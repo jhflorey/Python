@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <form action="/process" method="post">
+        <input type="hidden" name="action" value="register">
+        First_name: <input type="text" name="first_name"><br>
+        Last_name: <input type="text" name="last_name"><br>
+        Email: <input type="text" name="email"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" name="Register">
+    </form>
+    <br>
+    <form action="/process" method="post">
+        <input type="hidden" name="action" value="login">
+        Email: <input type="text" name="email"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

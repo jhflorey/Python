@@ -1,0 +1,23 @@
+.red{
+position: relative;
+left: 25px;
+}
+.green{
+position: relative;
+left: 12px;
+}
+.blue{
+position: relative;
+left: 20px;
+}
+.button{
+position: relative;
+left: 85px;
+}
+#my_div_color{
+width: 900px;
+height: 900px;
+}
+p{
+color: red;
+}

@@ -1,0 +1,46 @@
+table{
+border-spacing : 0;
+text-align: left;
+}
+th,td{
+border : 0.5px solid;
+padding : 5px;
+}
+tr:nth-child(even) {background-color :#c7d1d6}
+tr:nth-child(odd) {background-color : #edf4f5}
+th{
+background-color : #7b8184:
+}
+.add-button{
+background-color: green;
+color: white;
+border : 1px solid black;
+box-shadow: 4px 4px 4px black;
+position: relative;
+left:280px;
+}
+
+.title{
+display: inline-block;
+width: 120px;
+vertical-align: top;
+margin:0px;
+}
+.line{
+margin-bottom:20px;
+}
+
+.no-button{
+boder: 1px solid black;
+box-shadow : 4px 4 px 4px black;
+background-color: lightgray;
+display: inline-block;
+}
+
+.yes.button{
+boder: 1px solid black;
+box-shadow : 4px 4 px 4px black;
+background-color: red;
+color: white;
+display: inline-block;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Form Validation</title>
+</head>
+<body>
+    <h1>Enter a valid email !</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                {{message}}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form action="/process" method="POST">
+        Email: <input type="text" name="email"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
