@@ -25,22 +25,43 @@ display: inline-block;
 width: 120px;
 vertical-align: top;
 margin:0px;
+margin-top:10px;
 }
 .line{
 margin-bottom:20px;
 }
 
 .no-button{
-boder: 1px solid black;
-box-shadow : 4px 4 px 4px black;
+border: 1px solid black;
+box-shadow : 4px 4px 4px black;
 background-color: lightgray;
 display: inline-block;
+margin-right: 20px;
 }
 
-.yes.button{
-boder: 1px solid black;
-box-shadow : 4px 4 px 4px black;
+.yes-button{
+border: 1px solid black;
+box-shadow : 4px 4px 4px black;
 background-color: red;
 color: white;
 display: inline-block;
+}
+.content{
+display:inline-block;
+margin: 0px;
+width: 300px;
+margin-top:10px;
+
+}
+article{
+width: 500px;
+margin-bottom:30px;
+}
+footer{
+width:400px;
+text-align:center;
+}
+
+article  .title, article h3 {
+margin-left:40px;
 }

@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Delete a course</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'main_app/css/style.css'%}">
 </head>
 <body>
-    <h3>Are you sure you want to delete the following courses?</h3>
-    <p class="title">Name: </p>
-    <p class="content"> {{course.name}}</p>
-    <p class="title">Description: </p>
-    <p class="content">{{course.desc}}</p>
 
-    <a href="/"><button class="no-button">No</button></a>
-    <a href="/courses/confirm_destroy/{{course.id}}"><buton class="yes-button">Yes I want to delete this button</buton></a>
+    <article>
+         <h3>Are you sure you want to delete the following courses?</h3>
+        <p class="title ">Name: </p>
+        <p class="content"> {{course.name}}</p>
+        <p class="title">Description: </p>
+        <p class="content">{{course.desc}}</p>
+    </article>
+
+    <footer>
+         <a href="/"><button class="no-button">No</button></a>
+    <a href="/courses/confirm_destroy/{{course.id}}"><button class="yes-button">Yes I want to delete this button</button></a>
+    </footer>
+
 </body>
 </html>
